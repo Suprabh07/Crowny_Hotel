@@ -6,4 +6,5 @@ Steps to setup:
 1.Download and extract the files into the htdocs folder of XAMPP.
 2.First create a database of the name "hotel_management" in the website "http://localhost/phpmyadmin/".
 3.Run the file named setup.php in the browser.
-4.The website is ready to use.
+4.Run the file named final.php.
+5.The website is ready to use.
