@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+h1,h2,p,h3,h4{
+  opacity: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_space {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 15px 40px;
+  background: #7fc142;
+  font-weight: bold;
+  color: white;
+}
+
+.logo {
+  margin-top: -15px;
+}
+
+.navlinks button {
+  size: 10px 10px;
+}
+.navlinks button a {
+  color: white;
+  text-decoration: none;
+}
+.primary-btn:hover {
+  padding: 15px 40px;
+  background: white;
+  font-weight: bold;
+  color: #7fc142;
+}
+
+.secondary-btn {
+  padding: 15px 40px;
+  background: none;
+  border: 2px solid white;
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+/*--------header---------*/
+header {
+  height: 60px;
+  line-height: 10vh;
+  padding: 0 20px;
+  background-color: white;
+}
+
+header img {
+  margin: 20px 0;
+}
+
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+header ul li a {
+  color: black;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: #7fc142;
+}
+
+header i {
+  margin: 0 20px;
+}
+
+header button {
+  padding: 13px 40px;
+}
+
+header .navlinks span {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #009f7f;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: center;
+    z-index: 9;
+  }
+
+  header ul li {
+    display: block;
+  }
+
+  header ul li a {
+    color: white;
+  }
+
+  header i {
+    color: white;
+  }
+
+  header .navlinks span {
+    color: black;
+    display: block;
+    cursor: pointer;
+    line-height: 10vh;
+    font-size: 25px;
+  }
+}
+
+.backgroundimage{
+  margin: 0;
+  padding: 0;
+  background-image: url(background-3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
+.booking {
+  width: 100%;
+  height: 1000px;
+  border: 1px solid #282834;
+  padding: 50px;
+  opacity: 100%;
+}
+
+.booking img {
+  width: 25%;
+  height: 400px;
+}
+
+.booking h1 {
+  color: black;
+  font-size: 50px;
+}
+
+.booking h1 span {
+  color: #7fc142;
+}
+
+.booking h3 {
+  color: black;
+  font-size: 30px;
+}
+
+.form label {
+  color: black;
+  text-align: right;
+  padding-right: 8px;
+  align-self: center;
+}
+form {
+  display: grid;
+  grid-template-columns: 150px auto;
+  gap: 30px 30px;
+  max-width: 600px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.form label {
+  grid-column: 1;
+  font-size: 20px;
+}
+
+.form input {
+  grid-column: 2;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.submit {
+  grid-column: 2;
+  grid-row: 9;
+      height: 50px;
+    width: 200px;
+    margin:0 110px;
+  background: #7fc142;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.submit:hover{
+  background: #E8E4D9;
+  color: #7fc142;
+}
+
+.news, .terms{
+  grid-column:2;
+}
+
+.terms a{
+  color: #7fc142;
+  text-decoration: none;
+}
+
+
+
+.opaque{
+  padding: 0;
+  margin: 0;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.opaque h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.opaque h1 span {
+  color: #7fc142;
+}
+
+.opaque h3 {
+  color: white;
+  font-size: 30px;
+}
+
+.dateInput ::placeholder{
+  color: #999999;
+}
+
+.display{
+background-image: url(background-4.png) ;
+background-repeat: no-repeat;
+  width: 100%;
+  height: 91vh;
+  font-family: "Poppins";
+  text-align: center;
+  
+}
